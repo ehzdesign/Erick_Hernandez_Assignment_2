@@ -31,9 +31,13 @@ nav a {
   font-size: 1.6rem;
 }
 /*===================================
-=            BODY STYLES            =
+=            MAIN CONTENT STYLES            =
 ===================================*/
-/*=====  End of BODY STYLES  ======*/
+.intro {
+  border-bottom: 0.1rem solid #ffffff;
+  padding: 1.5em 0;
+}
+/*=====  End of MAIN CONTENT STYLES  ======*/
 /*=============================================
 =            PAGE CONTAINER STYLES            =
 =============================================*/
