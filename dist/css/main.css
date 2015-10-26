@@ -1,0 +1,108 @@
+/*===================================
+=            BASE STYLES            =
+===================================*/
+a {
+  color: #bbdefc;
+}
+nav a {
+  color: #fff;
+}
+a,
+ul {
+  margin: 0;
+  padding: 0;
+}
+/*=========================================
+=            TYPOGRAPHY STYLES            =
+=========================================*/
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('../../assets/images/airplanes-bg.png');
+  background-repeat: repeat;
+  font-size: 1.8rem;
+  padding: 5rem 0;
+  line-height: 2.7rem;
+}
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+/*===================================
+=            BODY STYLES            =
+===================================*/
+/*=====  End of BODY STYLES  ======*/
+/*=============================================
+=            PAGE CONTAINER STYLES            =
+=============================================*/
+#page-container {
+  width: 77%;
+  margin: 0 auto;
+  background: #fff;
+}
+.wrapper {
+  padding: 0 5rem;
+}
+/*=====================================
+=            HEADER STYLES            =
+=====================================*/
+#header {
+  padding: 0 .4rem;
+}
+/*=====  End of HEADER STYLES  ======*/
+/*=========================================
+=            NAVIGATION STYLES            =
+=========================================*/
+#navbar {
+  display: inline-block;
+}
+.nav {
+  background-color: #b62537;
+  font-weight: 600;
+  margin: 0;
+}
+.nav li {
+  display: inline-block;
+  padding: 2.3rem 1rem 1.6rem;
+  line-height: 2.4rem;
+  border-bottom: .2rem solid transparent;
+}
+.nav li:hover {
+  background-color: #3d4751;
+  border-bottom: 0.2rem solid #3498db;
+}
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.dropdown-link,
+.nav__dropdown-menu {
+  position: relative;
+}
+.dropdown-link:hover > .nav__dropdown-menu {
+  display: block;
+}
+.nav__dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 200%;
+  background-color: #3d4751;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+}
+.nav__dropdown-menu li {
+  display: block;
+  border: none;
+  padding: 0;
+}
+.nav__dropdown-menu li:nth-child(2) {
+  margin-top: 0.5rem;
+}
+.nav__dropdown-menu li:hover {
+  border: none;
+  background-color: #e74c3c;
+}
+/*=====  End of NAVIGATION STYLES  ======*/

@@ -1,0 +1,67 @@
+/*=========================================
+=            NAVIGATION STYLES            =
+=========================================*/
+#navbar{
+  display: inline-block;
+}
+
+
+
+.nav{
+  background-color: @color-nav-bg;
+  font-weight: @font-weight--semi-bold;
+  margin: 0;
+  li{
+    display: inline-block;
+    padding: 2.3rem 1rem 1.6rem;
+    line-height: @line-height - .3;
+    border-bottom: .2rem solid transparent;
+    &:hover{
+      background-color: @color-nav--hover;
+      border-bottom: .2rem solid @color-nav--bottom-border;
+    }
+  }
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+
+
+.dropdown-link{
+  position: relative;
+  &:hover > .nav__dropdown-menu{
+    display: block;
+  }
+}
+
+.nav__dropdown-menu{
+  display: none;
+  &:extend(.dropdown-link);
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 200%;
+  background-color: @color-nav--hover;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+    li{
+      display: block;
+      border: none;
+      padding: 0;
+      &:nth-child(2){
+        margin-top: 0.5rem;
+      }
+
+      &:hover{
+        border:none;
+        background-color: @color-nav--dropdown-hover;
+      }
+    }
+}
+
+/*=====  End of NAVIGATION STYLES  ======*/
+
+
+
+
