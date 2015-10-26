@@ -62,6 +62,7 @@ nav a {
   background-color: #b62537;
   font-weight: 600;
   margin: 0;
+  display: inline-block;
 }
 .nav li {
   display: inline-block;
