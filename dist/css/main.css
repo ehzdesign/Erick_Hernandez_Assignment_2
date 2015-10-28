@@ -141,6 +141,7 @@ nav a {
   width: 77%;
   margin: 0 auto;
   background: #fff;
+  border-radius: 4rem;
 }
 .wrapper {
   padding: 0 5rem;
@@ -244,6 +245,7 @@ nav a {
   width: 77%;
   margin: 0 auto;
   background: #fff;
+  border-radius: 4rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +321,6 @@ nav a {
 }
 .admin-footer {
   padding: 2rem 0;
-  border-radius: 4rem;
   width: 50%;
 }
 .admin-footer__links {
