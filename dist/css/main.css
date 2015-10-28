@@ -44,17 +44,27 @@ nav a {
   color: #b62537;
 }
 .main-content__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding: 2.7em 0;
 }
 .sidebar {
   background-color: blue;
   height: 100vh;
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
 }
 .main-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 .intro {
