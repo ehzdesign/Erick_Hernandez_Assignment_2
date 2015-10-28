@@ -22,16 +22,30 @@
   &:extend(.Flex);
   flex-direction: column;
   flex-basis: 100%;
+  padding: 1rem;
+  padding-left: 5rem;
 }
 
 .intro{
-  height: 50vh;
-  width: 100;
-  background-color: red;
+  h1{
+    font-size: 1.8rem;
+  }
+
 }
 
 .feature-article{
-  height: 50vh;
-  background-color: yellow;
+  h2{
+    color:@color-title;
+  }
+
+  img.feauture{
+    shape-outside:circle();
+    width: 30rem;
+    float: left;
+    padding-right: 5rem;
+
+  }
 }
+
+
 /*=====  End of MAIN CONTENT STYLES  ======*/
