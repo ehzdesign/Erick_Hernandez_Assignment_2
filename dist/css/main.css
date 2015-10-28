@@ -44,8 +44,9 @@ a {
   margin: 0;
   padding: 0;
 }
-h3 {
-  color: #71b7e6;
+ul,
+ol {
+  list-style-position: inside;
 }
 hr {
   height: 0.1rem;
@@ -68,8 +69,12 @@ body {
   font-size: 1.8rem;
   padding: 5rem 0;
 }
+h1,
 h2 {
   font-size: 4.8rem;
+}
+h3 {
+  color: #71b7e6;
 }
 p {
   line-height: 2.7rem;
@@ -199,6 +204,15 @@ nav a {
   padding: 1rem;
   padding-left: 5rem;
 }
+.main-content__unstyled-list {
+  list-style-type: none;
+}
+.main-content__unstyled-list a {
+  color: #71b7e6;
+}
+.main-content h2 {
+  font-size: 1.8rem;
+}
 .intro h1 {
   font-size: 1.8rem;
 }
@@ -307,3 +321,19 @@ nav a {
   font-weight: 400;
 }
 /*=====  End of FOOTER STYLES  ======*/
+/*=========================================
+=            ABOUT PAGE STYLES            =
+=========================================*/
+.faq h1 {
+  color: #fc535b;
+}
+.faq p {
+  margin-top: 0;
+}
+.faq ul {
+  list-style-type: none;
+}
+.faq li {
+  margin-top: 3em;
+}
+/*=====  End of ABOUT PAGE STYLES  ======*/
