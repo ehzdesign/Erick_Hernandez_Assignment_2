@@ -307,7 +307,6 @@ nav a {
   flex-basis: 10em;
 }
 .admin-footer {
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem 0;
 }
 .admin-footer__links {
@@ -315,7 +314,12 @@ nav a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 20em;
-  width: 25em;
+  width: 30em;
+}
+.admin-footer__links li:last-child:before {
+  content: 'Powered By';
+  font-size: 0.6em;
+  margin-right: 0.5em;
 }
 .admin-footer__links li a {
   font-weight: 400;

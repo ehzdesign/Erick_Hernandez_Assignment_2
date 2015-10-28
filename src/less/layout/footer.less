@@ -45,16 +45,24 @@
 
 .admin-footer{
   &:extend(.page-container);
-  background-color: fadeOut(@color-body, 10%);
+  // background-color: fadeOut(@color-body, 10%);
   padding: 1rem 0;
   &__links{
     &:extend(.footer__page-links  all);
     justify-content: space-between;
     width: 20em;
-    width: 25em;
+    width: 30em;
+    li:last-child{
+      &:before{
+        content: 'Powered By';
+        font-size: 0.6em;
+        margin-right: 0.5em;
+      }
+    }
     li a{
       font-weight: @font-weight--regular;
       }
+
     }
   }
 
