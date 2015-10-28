@@ -117,7 +117,7 @@ nav a {
 =============================================*/
 .button {
   position: relative;
-  padding: 1em 2em;
+  padding: 1.2em 5em;
   background-color: #fc535b;
   color: #fff;
   text-align: center;
@@ -134,6 +134,46 @@ nav a {
   box-shadow: none;
 }
 /*=====  End of BUTTON STYLES  ======*/
+/*=====================================
+=            HEADER STYLES            =
+=====================================*/
+#header {
+  padding: 0 .4rem;
+}
+/*=====  End of HEADER STYLES  ======*/
+/*======================================
+=            SIDEBAR STYLES            =
+======================================*/
+.sidebar {
+  -webkit-flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  padding: 0 0 0 0.5rem;
+  color: #3498db;
+}
+.sidebar h2 {
+  font-size: 2.4rem;
+}
+.sidebar .logo {
+  max-width: 100%;
+}
+.sidebar .fa {
+  color: #989898;
+}
+.sidebar .fa-circle {
+  color: #eaeaea;
+}
+.sidebar__content {
+  padding: 1rem 0;
+}
+.sidebar__footer {
+  padding: 2rem 0;
+}
+.hashtag {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+/*=====  End of SIDEBAR STYLES  ======*/
 /*=============================================
 =            PAGE CONTAINER STYLES            =
 =============================================*/
@@ -142,17 +182,11 @@ nav a {
   width: 77%;
   margin: 0 auto;
   background: #fff;
+  border-radius: 4rem;
 }
 .wrapper {
   padding: 0 5rem;
 }
-/*=====================================
-=            HEADER STYLES            =
-=====================================*/
-#header {
-  padding: 0 .4rem;
-}
-/*=====  End of HEADER STYLES  ======*/
 /*===================================
 =            MAIN CONTENT STYLES            =
 ===================================*/
@@ -205,39 +239,6 @@ nav a {
   padding-right: 5rem;
 }
 /*=====  End of MAIN CONTENT STYLES  ======*/
-/*======================================
-=            SIDEBAR STYLES            =
-======================================*/
-.sidebar {
-  -webkit-flex-basis: 30%;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
-  padding: 0 0 0 0.5rem;
-  color: #3498db;
-}
-.sidebar h2 {
-  font-size: 2.4rem;
-}
-.sidebar .logo {
-  max-width: 100%;
-}
-.sidebar .fa {
-  color: #989898;
-}
-.sidebar .fa-circle {
-  color: #eaeaea;
-}
-.sidebar__content {
-  padding: 1rem 0;
-}
-.sidebar__footer {
-  padding: 2rem 0;
-}
-.hashtag {
-  font-size: 3.2rem;
-  font-weight: 700;
-}
-/*=====  End of SIDEBAR STYLES  ======*/
 /*=====================================
 =            FOOTER STYLES            =
 =====================================*/
@@ -245,6 +246,7 @@ nav a {
   width: 77%;
   margin: 0 auto;
   background: #fff;
+  border-radius: 4rem;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +322,6 @@ nav a {
 }
 .admin-footer {
   padding: 2rem 0;
-  border-radius: 4rem;
   width: 50%;
 }
 .admin-footer__links {
@@ -357,3 +358,21 @@ nav a {
   margin-top: 3em;
 }
 /*=====  End of ABOUT PAGE STYLES  ======*/
+/*=======================================
+=            REGISTER STYLES            =
+=======================================*/
+.register {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.register button {
+  top: 5rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+/*=====  End of REGISTER STYLES  ======*/
