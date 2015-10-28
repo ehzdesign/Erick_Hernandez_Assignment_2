@@ -1,17 +1,38 @@
 /*===================================
 =            BASE STYLES            =
 ===================================*/
+*{
+  box-sizing: border-box;
+}
 
 a{
   color: @color-link;
+  text-decoration: none;
 }
 
 nav a{
   color: @color-link--nav;
 }
 
-a,
-ul{
-  margin: 0;
+ul,
+a{
+  margin:0;
   padding:0;
+}
+
+ul,
+ol{
+  list-style-position: inside;
+}
+
+
+
+hr{
+  height: 0.1rem;
+  border: none;
+  background-color: @color-section--underline;
+}
+
+img{
+  max-width: 100%;
 }

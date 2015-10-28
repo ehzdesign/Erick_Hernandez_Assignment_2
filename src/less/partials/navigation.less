@@ -1,9 +1,9 @@
 /*=========================================
 =            NAVIGATION STYLES            =
 =========================================*/
-#navbar{
-  display: inline-block;
-}
+// nav{
+//   display: inline-block;
+// }
 
 
 
@@ -15,11 +15,15 @@
   li{
     display: inline-block;
     padding: 2.3rem 1rem 1.6rem;
-    line-height: @line-height - .3;
+    line-height: 2.4rem;
     border-bottom: .2rem solid transparent;
+    float: left;
     &:hover{
       background-color: @color-nav--hover;
       border-bottom: .2rem solid @color-nav--bottom-border;
+    }
+    &.current{
+      &:extend(.nav li:hover);
     }
   }
   a{
@@ -50,6 +54,7 @@
       display: block;
       border: none;
       padding: 0;
+      float: none;
       &:nth-child(2){
         margin-top: 0.5rem;
       }

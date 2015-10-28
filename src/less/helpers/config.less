@@ -2,12 +2,13 @@
 =            COLOR VARIABLES            =
 =======================================*/
 @tundora       :#444;
-@limedSpruce   :#3d4751;
+@limedSpruce   :#242544;
+@dustyGray      :#989898;
 @white         :#fff;
-@mariner       :#2980b9;
+@mariner       :#5B5C71;
 @curiousBlue   :#3498db;
-@frenchPass    :#bbdefc;
-@tallPoppy     :#b62537;
+@frenchPass    :#85C8FF;
+@tallPoppy     :#fc535b;
 @cinnabar      :#e74c3c;
 
 
@@ -24,6 +25,8 @@
 
 @font-base        : 10px;
 
+@line-height      :@font-base + 17;
+
 
 @font-weight--regular   : 400;
 @font-weight--semi-bold : 600; 
@@ -33,19 +36,20 @@
 @color-body                  :@white;
 @color-text--light           :@white;
 @color-text--dark            :@tundora;
-@color-section--underline    :lighten(@tundora, 80%);
+@color-section--underline    :tint(@tundora, 80%);
 
 @color-nav-bg                :@tallPoppy;
 @color-title                 :@tallPoppy;
+@color-button                 :@tallPoppy;
 
-@color-nav--bottom-border    :@curiousBlue;
+@color-nav--bottom-border    :@tallPoppy;
 @color-text--highlight       :@curiousBlue;
 
 @color-link                  :@frenchPass;
 @color-nav--hover            :@limedSpruce;  
 @color-nav--dropdown-hover   :@cinnabar;
-
-@line-height                 :@font-base + 17;        
+@color-social--icon          :@dustyGray;       
+@color-social--bg       :tint(@dustyGray, 80%);       
 
 /*======================================
 =            PATH VARIABLES            =
