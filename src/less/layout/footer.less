@@ -37,7 +37,8 @@
 
 .footer__sponsor-links{
   &:extend(.footer__page-links  all);
-  width: 40em;
+  justify-content: center;
+  max-width: 40em;
   li{
     flex-basis: 10em;
   }
@@ -50,8 +51,7 @@
   &__links{
     &:extend(.footer__page-links  all);
     justify-content: space-between;
-    width: 20em;
-    width: 30em;
+    max-width: 30em;
     li:last-child{
       &:before{
         content: 'Powered By';

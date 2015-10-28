@@ -299,7 +299,10 @@ nav a {
   text-decoration: underline;
 }
 .footer__sponsor-links {
-  width: 40em;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 40em;
 }
 .footer__sponsor-links li {
   -webkit-flex-basis: 10em;
@@ -313,8 +316,7 @@ nav a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 20em;
-  width: 30em;
+  max-width: 30em;
 }
 .admin-footer__links li:last-child:before {
   content: 'Powered By';
