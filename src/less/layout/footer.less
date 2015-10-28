@@ -3,11 +3,12 @@
 =====================================*/
 
 .footer{
-  &:extend(.page-container);
-  &:extend(.main-content);
+  .page-container;
+  .main-content;
   margin: 3rem auto;
   padding: 3em 0;
-  &:extend(.Text-center);
+  .Text-center;
+  .Center-margin;
 
   .wrapper:first-child{
     padding: 0 10em;
@@ -15,9 +16,9 @@
 }
 
 .footer__page-links{
-  &:extend(.Flex);
-  &:extend(.Center-margin);
-  &:extend(.Flex-wrap);
+  .Flex;
+  .Center-margin;
+  .Flex-wrap;
   justify-content: space-between;
   font-smooth: never;
   li{

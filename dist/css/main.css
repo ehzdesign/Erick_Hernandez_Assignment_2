@@ -1,31 +1,3 @@
-.page-container,
-.footer__page-links,
-.footer,
-.footer__sponsor-links,
-.admin-footer,
-.admin-footer__links {
-  margin: 0 auto;
-}
-.main-content__container,
-.main-content,
-.footer__page-links,
-.footer,
-.footer__sponsor-links,
-.admin-footer__links {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer__page-links,
-.footer__sponsor-links,
-.admin-footer__links {
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.footer {
-  text-align: center;
-}
 /*===================================
 =            BASE STYLES            =
 ===================================*/
@@ -165,9 +137,9 @@ nav a {
 =            PAGE CONTAINER STYLES            =
 =============================================*/
 .page-container,
-.footer,
 .admin-footer {
   width: 77%;
+  margin: 0 auto;
   background: #fff;
 }
 .wrapper {
@@ -191,10 +163,15 @@ nav a {
   color: #fc535b;
 }
 .main-content__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding: 2.7em 0;
 }
-.main-content,
-.footer {
+.main-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -264,8 +241,32 @@ nav a {
 =            FOOTER STYLES            =
 =====================================*/
 .footer {
+  width: 77%;
+  background: #fff;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding: 1rem;
+  padding-left: 5rem;
   margin: 3rem auto;
   padding: 3em 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer__unstyled-list {
+  list-style-type: none;
+}
+.footer__unstyled-list a {
+  color: #3498db;
+}
+.footer h2 {
+  font-size: 1.8rem;
 }
 .footer .wrapper:first-child {
   padding: 0 10em;
@@ -273,6 +274,13 @@ nav a {
 .footer__page-links,
 .footer__sponsor-links,
 .admin-footer__links {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
