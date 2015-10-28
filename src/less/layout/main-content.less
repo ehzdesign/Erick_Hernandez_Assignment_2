@@ -11,19 +11,15 @@
   color: @color-title; 
 }
 
+
 .main-content__container{
-  display: flex;
+  &:extend(.flex);
   padding: 2.7em 0;
 }
 
-.sidebar{
-  background-color: blue;
-  height: 100vh;
-  flex-basis: 30%;
-}
 
 .main-content{
-  display: flex;
+  &:extend(.flex);
   flex-direction: column;
   flex-basis: 100%;
 }

@@ -1,3 +1,7 @@
+.main-content__container,
+.main-content {
+  display: flex;
+}
 /*===================================
 =            BASE STYLES            =
 ===================================*/
@@ -12,6 +16,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+h3 {
+  color: #2980b9;
+}
+hr {
+  height: 0.1rem;
+  border: none;
+  background-color: #dadada;
+}
 /*=========================================
 =            TYPOGRAPHY STYLES            =
 =========================================*/
@@ -20,7 +32,7 @@ html {
 }
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url('../../assets/images/airplanes-bg.png');
+  background-image: url('../../assets/images/site-bg.jpg');
   background-repeat: repeat;
   font-size: 1.8rem;
   padding: 5rem 0;
@@ -33,66 +45,11 @@ nav a {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
 }
-/*===================================
-=            MAIN CONTENT STYLES            =
-===================================*/
-.intro {
-  border-bottom: 0.1rem solid #ffffff;
-  padding: 1.5em 0;
-}
-.article-title {
-  color: #b62537;
-}
-.main-content__container {
-  display: flex;
-  padding: 2.7em 0;
-}
-.sidebar {
-  background-color: blue;
-  height: 100vh;
-  flex-basis: 30%;
-}
-.main-content {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-.intro {
-  height: 50vh;
-  width: 100;
-  background-color: red;
-}
-.feature-article {
-  height: 50vh;
-  background-color: yellow;
-}
-/*=====  End of MAIN CONTENT STYLES  ======*/
-/*=============================================
-=            PAGE CONTAINER STYLES            =
-=============================================*/
-#page-container {
-  width: 77%;
-  margin: 0 auto;
-  background: #fff;
-}
-.wrapper {
-  padding: 0 5rem;
-}
-/*=====================================
-=            HEADER STYLES            =
-=====================================*/
-#header {
-  padding: 0 .4rem;
-}
-/*=====  End of HEADER STYLES  ======*/
 /*=========================================
 =            NAVIGATION STYLES            =
 =========================================*/
-#navbar {
-  display: inline-block;
-}
 .nav {
-  background-color: #b62537;
+  background-color: #fc535b;
   font-weight: 600;
   margin: 0;
   display: inline-block;
@@ -100,12 +57,14 @@ nav a {
 .nav li {
   display: inline-block;
   padding: 2.3rem 1rem 1.6rem;
-  line-height: 26.7px;
+  line-height: 24px;
   border-bottom: .2rem solid transparent;
+  float: left;
 }
-.nav li:hover {
-  background-color: #3d4751;
-  border-bottom: 0.2rem solid #3498db;
+.nav li:hover,
+.nav li.current {
+  background-color: #242544;
+  border-bottom: 0.2rem solid #fc535b;
 }
 .nav a {
   text-decoration: none;
@@ -124,13 +83,14 @@ nav a {
   top: 102%;
   left: 0;
   width: 200%;
-  background-color: #3d4751;
+  background-color: #242544;
   padding: 0.5rem 3rem 0.5rem 1rem;
 }
 .nav__dropdown-menu li {
   display: block;
   border: none;
   padding: 0;
+  float: none;
 }
 .nav__dropdown-menu li:nth-child(2) {
   margin-top: 0.5rem;
@@ -140,3 +100,79 @@ nav a {
   background-color: #e74c3c;
 }
 /*=====  End of NAVIGATION STYLES  ======*/
+/*=============================================
+=            PAGE CONTAINER STYLES            =
+=============================================*/
+#page-container {
+  width: 77%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+}
+.wrapper {
+  padding: 0 5rem;
+}
+/*=====================================
+=            HEADER STYLES            =
+=====================================*/
+#header {
+  padding: 0 .4rem;
+}
+/*=====  End of HEADER STYLES  ======*/
+/*===================================
+=            MAIN CONTENT STYLES            =
+===================================*/
+.intro {
+  border-bottom: 0.1rem solid #dadada;
+  padding: 1.5em 0;
+}
+.article-title {
+  color: #fc535b;
+}
+.main-content__container {
+  padding: 2.7em 0;
+}
+.main-content {
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.intro {
+  height: 50vh;
+  width: 100;
+  background-color: red;
+}
+.feature-article {
+  height: 50vh;
+  background-color: yellow;
+}
+/*=====  End of MAIN CONTENT STYLES  ======*/
+/*======================================
+=            SIDEBAR STYLES            =
+======================================*/
+.sidebar {
+  flex-basis: 30%;
+  padding: 0 0.5rem;
+  color: #2980b9;
+}
+.sidebar h2 {
+  font-size: 2.4rem;
+}
+.sidebar .logo {
+  max-width: 100%;
+}
+.sidebar .fa {
+  color: #989898;
+}
+.sidebar .fa-circle {
+  color: #eaeaea;
+}
+.sidebar__content {
+  padding: 1rem 0;
+}
+.sidebar__footer {
+  padding: 2rem 0;
+}
+.hashtag {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+/*=====  End of SIDEBAR STYLES  ======*/

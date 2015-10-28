@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>2015 Oregon Google Summit</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="dist/css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700|Open+Sans:400,600' rel='stylesheet' type='text/css'>
 </head>
@@ -15,13 +16,13 @@
     <!-- HEADER BEGINS -->
       <header id="header">
       <!-- NAV BEGINS -->
-        <nav class="navbar">
+        <nav>
           <ul class="nav">
-            <li><a href="home.html" class="nav-link">Welcome</a></li>
+            <li class="current"><a href="home.html" class="nav-link">Welcome</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="register.html" class="nav-link">Register</a></li>
-            <li><a href="#" class="nav-link">Schedule</a></li>
-            <li class="dropdown-link"><a href="#" class="nav-link">Sessions</a>
+          <!--   <li><a href="#" class="nav-link">Schedule</a></li> -->
+          <!--   <li class="dropdown-link"><a href="#" class="nav-link">Sessions</a>
               <ul class="nav__dropdown-menu">
                 <li class="nav-link"><a href="#">Hillsboro</a></li>
                 <li class="nav-link"><a href="#">McNary</a></li>
@@ -30,7 +31,7 @@
             <li><a href="#" class="nav-link">Locations</a></li>
             <li><a href="#" class="nav-link">Blog</a></li>
             <li><a href="#" class="nav-link">Prior Years</a></li>
-            <li><a href="#" class="nav-link">Sitemap</a></li>
+            <li><a href="#" class="nav-link">Sitemap</a></li> -->
           </ul>
         </nav>
         <!-- NAV ENDS -->
@@ -39,7 +40,43 @@
       <!-- MAIN CONTENT-CONTAINER BEGINS -->
       <div class="main-content__container">
       <!-- ASIDE BEGINS -->
-        <aside class="sidebar"></aside> 
+        <aside class="sidebar">
+          <!-- ASIDE HEADER BEGINS-->
+          <header class="sidebar__header">
+          <img src="assets/images/monsters.gif"  alt="main logo" class="logo">
+            <h2>October 29, 2015<br>
+            3:30pm - 7:00pm</h2>
+          </header>
+          <!-- ASIDE HEADER ENDS -->
+          <hr>
+          <!-- ASIDE CONTENT BEGINS -->
+          <section class="sidebar__content">
+            <h2>Two Locations!</h2>
+            <p>Humber College<br> 
+               6 Humber College Blvd.<br> 
+               Somewhere Ont. M3H 1S1</p>
+            <p>That Other Place<br> 
+               Way over There Ave.<br> 
+               Summerville Ont. 2W2 3E3</p>
+          </section>
+          <hr>
+          <!-- ASIDE CONTENT ENDS -->
+          <footer class="sidebar__footer">
+           <a href="#"> 
+            <span class="fa-stack fa-2x">
+             <i class="fa fa-circle fa-stack-2x"></i>
+             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+           </a>
+           <a href="#">
+             <span class="fa-stack fa-2x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+           </a>
+           <p class="hashtag">#webd2015</p>
+          </footer>
+        </aside> 
       <!-- ASIDE ENDS -->
         <!--MAIN CONTENT BEGINS -->
         <main class="main-content">
