@@ -8,7 +8,6 @@
   margin: 3rem auto;
   padding: 3em 0;
   .Text-center;
-  .Center-margin;
 
   .wrapper:first-child{
     padding: 0 10em;
@@ -21,6 +20,7 @@
   .Flex-wrap;
   justify-content: space-between;
   font-smooth: never;
+
   li{
     display: inline-block;
     &not(:last-child){
@@ -47,8 +47,9 @@
 
 .admin-footer{
   &:extend(.page-container);
-  // background-color: fadeOut(@color-body, 10%);
-  padding: 1rem 0;
+    padding: 2rem 0;
+    border-radius: 4rem;
+    width: 50%;
   &__links{
     &:extend(.footer__page-links  all);
     justify-content: space-between;

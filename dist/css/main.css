@@ -242,6 +242,7 @@ nav a {
 =====================================*/
 .footer {
   width: 77%;
+  margin: 0 auto;
   background: #fff;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,7 +258,6 @@ nav a {
   margin: 3rem auto;
   padding: 3em 0;
   text-align: center;
-  margin: 0 auto;
 }
 .footer__unstyled-list {
   list-style-type: none;
@@ -318,7 +318,9 @@ nav a {
   flex-basis: 10em;
 }
 .admin-footer {
-  padding: 1rem 0;
+  padding: 2rem 0;
+  border-radius: 4rem;
+  width: 50%;
 }
 .admin-footer__links {
   -webkit-justify-content: space-between;
