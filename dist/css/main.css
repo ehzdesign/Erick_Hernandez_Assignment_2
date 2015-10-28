@@ -51,6 +51,7 @@ h3 {
 p {
   line-height: 2.7rem;
   letter-spacing: 2;
+  margin-bottom: 2rem;
 }
 nav a {
   font-family: 'Open Sans', sans-serif;
@@ -340,6 +341,9 @@ nav a {
 /*=========================================
 =            ABOUT PAGE STYLES            =
 =========================================*/
+.intro__list {
+  margin: 6rem auto;
+}
 .faq h1 {
   color: #fc535b;
 }
