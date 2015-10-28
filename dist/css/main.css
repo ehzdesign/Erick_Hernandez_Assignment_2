@@ -1,20 +1,46 @@
+.page-container,
+.footer__page-links,
+.footer,
+.footer__sponsor-links,
+.admin-footer,
+.admin-footer__links {
+  margin: 0 auto;
+}
 .main-content__container,
-.main-content {
+.main-content,
+.footer__page-links,
+.footer,
+.footer__sponsor-links,
+.admin-footer__links {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
+.footer__page-links,
+.footer__sponsor-links,
+.admin-footer__links {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.footer {
+  text-align: center;
+}
 /*===================================
 =            BASE STYLES            =
 ===================================*/
+* {
+  box-sizing: border-box;
+}
 a {
   color: #bbdefc;
+  text-decoration: none;
 }
 nav a {
   color: #fff;
 }
-a,
-ul {
+ul,
+a {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +51,9 @@ hr {
   height: 0.1rem;
   border: none;
   background-color: #dadada;
+}
+img {
+  max-width: 100%;
 }
 /*=========================================
 =            TYPOGRAPHY STYLES            =
@@ -105,10 +134,11 @@ nav a {
 /*=============================================
 =            PAGE CONTAINER STYLES            =
 =============================================*/
-#page-container {
+.page-container,
+.footer,
+.admin-footer {
   width: 77%;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
 }
 .wrapper {
   padding: 0 5rem;
@@ -133,7 +163,8 @@ nav a {
 .main-content__container {
   padding: 2.7em 0;
 }
-.main-content {
+.main-content,
+.footer {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -184,3 +215,62 @@ nav a {
   font-weight: 700;
 }
 /*=====  End of SIDEBAR STYLES  ======*/
+/*=====================================
+=            FOOTER STYLES            =
+=====================================*/
+.footer {
+  margin: 3rem auto;
+}
+.footer .wrapper:first-child {
+  padding: 0 10em;
+}
+.footer__page-links,
+.footer__sponsor-links,
+.admin-footer__links {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-smooth: never;
+}
+.footer__page-links li,
+.footer__sponsor-links li,
+.admin-footer__links li {
+  display: inline-block;
+}
+.footer__page-links linot(:last-child),
+.footer__sponsor-links linot(:last-child),
+.admin-footer__links linot(:last-child) {
+  margin-right: 1.3em;
+}
+.footer__page-links li a,
+.footer__sponsor-links li a,
+.admin-footer__links li a {
+  font-weight: 700;
+}
+.footer__page-links li a:hover,
+.footer__sponsor-links li a:hover,
+.admin-footer__links li a:hover {
+  text-decoration: underline;
+}
+.footer__sponsor-links {
+  width: 40em;
+}
+.footer__sponsor-links li {
+  -webkit-flex-basis: 10em;
+  -ms-flex-preferred-size: 10em;
+  flex-basis: 10em;
+}
+.admin-footer {
+  background-color: transparent;
+}
+.admin-footer__links {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 20em;
+  width: 25em;
+}
+.admin-footer__links li a {
+  font-weight: 400;
+}
+/*=====  End of FOOTER STYLES  ======*/
