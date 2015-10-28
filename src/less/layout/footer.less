@@ -1,0 +1,61 @@
+/*=====================================
+=            FOOTER STYLES            =
+=====================================*/
+
+.footer{
+  &:extend(.page-container);
+  &:extend(.main-content);
+  margin: 3rem auto;
+  &:extend(.Text-center);
+
+  .wrapper:first-child{
+    padding: 0 10em;
+  }
+}
+
+.footer__page-links{
+  &:extend(.Flex);
+  &:extend(.Center-margin);
+  &:extend(.Flex-wrap);
+  justify-content: space-between;
+  font-smooth: never;
+  li{
+    display: inline-block;
+    &not(:last-child){
+      margin-right: 1.3em;  
+    }
+    a{
+      font-weight: @font-weight--bold;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+.footer__sponsor-links{
+  &:extend(.footer__page-links  all);
+  width: 40em;
+  li{
+    flex-basis: 10em;
+  }
+}
+
+.admin-footer{
+  &:extend(.page-container);
+  background-color: transparent;
+  &__links{
+    &:extend(.footer__page-links  all);
+    justify-content: space-between;
+    width: 20em;
+    width: 25em;
+    li a{
+      font-weight: @font-weight--regular;
+      }
+    }
+  }
+
+
+
+/*=====  End of FOOTER STYLES  ======*/
