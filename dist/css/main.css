@@ -33,7 +33,7 @@
   box-sizing: border-box;
 }
 a {
-  color: #bbdefc;
+  color: #85C8FF;
   text-decoration: none;
 }
 nav a {
@@ -74,7 +74,7 @@ h2 {
   font-size: 4.8rem;
 }
 h3 {
-  color: #71b7e6;
+  color: #3498db;
 }
 p {
   line-height: 2.7rem;
@@ -208,7 +208,7 @@ nav a {
   list-style-type: none;
 }
 .main-content__unstyled-list a {
-  color: #71b7e6;
+  color: #3498db;
 }
 .main-content h2 {
   font-size: 1.8rem;
@@ -235,7 +235,7 @@ nav a {
   -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
   padding: 0 0 0 0.5rem;
-  color: #71b7e6;
+  color: #3498db;
 }
 .sidebar h2 {
   font-size: 2.4rem;
