@@ -65,6 +65,7 @@ nav a {
   font-weight: 600;
   margin: 0;
   display: inline-block;
+  width: 90%;
 }
 .nav li {
   display: inline-block;
@@ -156,6 +157,7 @@ nav a {
 }
 .sidebar .logo {
   max-width: 100%;
+  margin-bottom: 1rem;
 }
 .sidebar .fa {
   color: #989898;
@@ -280,14 +282,13 @@ nav a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-smooth: never;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 4rem auto;
 }
 .footer__page-links li,
 .footer__sponsor-links li,
@@ -310,9 +311,6 @@ nav a {
   text-decoration: underline;
 }
 .footer__sponsor-links {
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   max-width: 40em;
 }
 .footer__sponsor-links li {
@@ -321,22 +319,22 @@ nav a {
   flex-basis: 10em;
 }
 .admin-footer {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   width: 50%;
 }
 .admin-footer__links {
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   max-width: 30em;
+}
+.admin-footer__links li {
+  margin: 0.5em 0;
+}
+.admin-footer__links li a {
+  font-weight: 400;
 }
 .admin-footer__links li:last-child:before {
   content: 'Powered By';
   font-size: 0.6em;
   margin-right: 0.5em;
-}
-.admin-footer__links li a {
-  font-weight: 400;
 }
 /*=====  End of FOOTER STYLES  ======*/
 /*=========================================
