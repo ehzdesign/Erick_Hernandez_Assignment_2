@@ -65,7 +65,23 @@ nav a {
   font-weight: 600;
   margin: 0;
   display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 90%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+.nav img {
+  height: 4rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 .nav li {
   display: inline-block;
@@ -129,6 +145,7 @@ nav a {
   border-bottom: 2px solid #ca4249;
   cursor: pointer;
   box-shadow: inset 0 -2px #ca4249;
+  font-weight: bold;
 }
 .button:active {
   top: 1px;
@@ -188,7 +205,7 @@ nav a {
   border-radius: 4rem;
 }
 .wrapper {
-  padding: 0 5rem;
+  padding: 0 10%;
 }
 /*===================================
 =            MAIN CONTENT STYLES            =
@@ -275,7 +292,7 @@ nav a {
   font-size: 1.8rem;
 }
 .footer .wrapper:first-child {
-  padding: 0 10em;
+  padding: 0 15%;
 }
 .footer__page-links,
 .footer__sponsor-links,
@@ -295,11 +312,12 @@ nav a {
 .footer__sponsor-links li,
 .admin-footer__links li {
   display: inline-block;
+  margin: 1rem 2%;
 }
-.footer__page-links linot(:last-child),
-.footer__sponsor-links linot(:last-child),
-.admin-footer__links linot(:last-child) {
-  margin-right: 1.3em;
+.footer__page-links li:last-child,
+.footer__sponsor-links li:last-child,
+.admin-footer__links li:last-child {
+  margin-right: 0;
 }
 .footer__page-links li a,
 .footer__sponsor-links li a,
@@ -313,6 +331,7 @@ nav a {
 }
 .footer__sponsor-links {
   max-width: 40em;
+  margin: 2rem auto;
 }
 .footer__sponsor-links li {
   -webkit-flex-basis: 10em;
@@ -328,7 +347,7 @@ nav a {
   max-width: 30em;
 }
 .admin-footer__links li {
-  margin: 0.5em 0;
+  margin: 0.5em;
 }
 .admin-footer__links li a {
   font-weight: 400;

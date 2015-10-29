@@ -10,21 +10,21 @@
   .Text-center;
 
   .wrapper:first-child{
-    padding: 0 10em;
+    padding: 0 15%;
   }
 }
 
 .footer__page-links{
   .Flex;
-  // .Center-margin;
   .Flex-wrap;
   justify-content: space-around;
   margin: 4rem auto;
 
   li{
     display: inline-block;
-    &not(:last-child){
-      margin-right: 1.3em;  
+    margin: 1rem 2%;
+    &:last-child{
+      margin-right: 0;  
     }
     a{
       font-weight: @font-weight--bold;
@@ -39,6 +39,7 @@
 .footer__sponsor-links{
   &:extend(.footer__page-links  all);
   max-width: 40em;
+  margin: 2rem auto;
   li{
     flex-basis: 10em;
   }
@@ -53,7 +54,7 @@
     margin: 1rem auto;
     max-width: 30em;
     li{
-      margin: 0.5em 0;
+      margin: 0.5em;
       a{
       font-weight: @font-weight--regular;
       }
