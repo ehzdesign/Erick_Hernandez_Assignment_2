@@ -46,10 +46,11 @@
 
 .admin-footer{
   &:extend(.page-container);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     width: 50%;
   &__links{
     &:extend(.footer__page-links  all);
+    margin: 1rem auto;
     max-width: 30em;
     li{
       margin: 0.5em 0;
@@ -59,6 +60,7 @@
       &:last-child{
         &:before{
           content: 'Powered By';
+          color: tint(@color-text--dark, 60%);
           font-size: 0.6em;
           margin-right: 0.5em;
         }

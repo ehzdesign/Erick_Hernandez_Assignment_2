@@ -73,6 +73,7 @@ nav a {
   line-height: 2.4rem;
   border-bottom: .2rem solid transparent;
   float: left;
+  transition: all 0.3s ease;
 }
 .nav li:hover,
 .nav li.current {
@@ -319,10 +320,11 @@ nav a {
   flex-basis: 10em;
 }
 .admin-footer {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   width: 50%;
 }
 .admin-footer__links {
+  margin: 1rem auto;
   max-width: 30em;
 }
 .admin-footer__links li {
@@ -333,6 +335,7 @@ nav a {
 }
 .admin-footer__links li:last-child:before {
   content: 'Powered By';
+  color: #b4b4b4;
   font-size: 0.6em;
   margin-right: 0.5em;
 }
@@ -368,7 +371,7 @@ nav a {
   flex-direction: column;
 }
 .register button {
-  top: 5rem;
+  margin-top: 5rem;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
