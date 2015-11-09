@@ -15,20 +15,52 @@
 }
 
 .Flex{
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.Flex-wrap{
-  flex-wrap: wrap;
+.Flex-direction(@direction){
+  -webkit-flex-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
+}
+
+
+
+.Flex-wrap(@layout: wrap){
+  -webkit-flex-wrap: @layout;
+  -ms-flex-wrap: @layout;
+  flex-wrap: @layout;
+}
+
+.Flex-space-between{
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Flex-space-around{
+   -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.Flex-basis(@value){
+  -webkit-flex-basis: @value;
+  -ms-flex-preferred-size: @value;
+  flex-basis: @value;
 }
 
 .Text-center{
   text-align: center;
 }
 
-// .Justify-cc{
-//   justify-content: center;
-// }
+.Align-self(@position){
+  -webkit-align-self: @position;
+  -ms-flex-item-align: @position;
+  align-self: @position;
+}
 
 .Transition(@prop: all, @time: 0.3s, @timing: ease){
   transition: @arguments;
